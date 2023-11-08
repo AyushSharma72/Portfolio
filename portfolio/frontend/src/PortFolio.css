@@ -1,0 +1,424 @@
+body {
+    background-image: url("assets/backimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.Navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 44, 44, 0.703);
+    z-index: 10;
+}
+
+.Navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+.HamburgerMenu {
+    top: 0;
+    position: fixed;
+    display: none;
+}
+
+.Navbar1 {
+    display: flex;
+    align-items: center;
+    transition: height 0.5s;
+}
+
+.Navbar2 {
+    display: none;
+}
+
+.Navlinks a {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.Navlinks a:hover {
+    transform: scale(1.1);
+    color: cyan;
+}
+
+.active {
+    border-bottom: 3px solid cyan;
+}
+
+.ScrolltoTopButton {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 6%;
+    position: fixed;
+    top: 80%;
+    left: 5%;
+    z-index: 3;
+    transition: opacity 0.5s;
+    border-radius: 50%;
+}
+
+.HomeParentDiv {
+    height: 100vh;
+    width:80%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+
+.HomeLeftSection {
+    color: white;
+}
+
+.Myimage {
+    width: 110%;
+}
+
+.AboutMe {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.Whatido h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.AboutMePara {
+    width: 60%;
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutMePara p {
+    margin-bottom: 0px;
+}
+
+.Skills {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.MERN {
+    padding: 1rem;
+    background-color: rgba(235, 229, 229, 0.128);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.WebDesign {
+    padding: 1rem;
+    background-color: rgba(235, 229, 229, 0.128);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.LanguagesKnown {
+    padding: 1rem;
+    background-color: rgba(235, 229, 229, 0.128);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.AboutusContent {
+    display: flex;
+    color: white;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.aboutContent {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.PersonalInfo {
+    margin-top: 4rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.Name {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Address {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.LocationSymbol {
+    color: white;
+}
+
+.Education {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.font {
+    color: white;
+}
+
+.Color {
+    color: cyan;
+}
+
+.Color2 {
+    color: white;
+    margin-left: 6px;
+}
+
+.Pinfoheading {
+    font-weight: 700;
+    width: 60%;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.ProjectImages {
+    width: 80%;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    /* background-color: rgba(235, 229, 229, 0.128); */
+
+    background: transparent;
+}
+
+.layer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), black);
+    position: relative;
+    height: 0%;
+    left: 0;
+    top: -100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s;
+
+}
+
+.imagedivs {
+    width: 40%;
+
+}
+
+.imagedivs:hover .layer {
+    height: 100%;
+}
+
+.imagedivs2 {
+    width: 40%;
+    height: 77%;
+}
+
+.imagedivs2:hover .layer {
+
+    height: 100%;
+}
+
+.ProjectImages2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.show {
+    max-height: 70rem;
+
+}
+
+.ExternalLink {
+    background-color: aliceblue;
+
+}
+
+.Button {
+    border-radius: 10%;
+    font-weight: 700;
+    transition: transform 0.3s ease
+}
+
+.Button:hover {
+    border: 2px solid black;
+    transform: scale(0.95);
+}
+
+/* .Button:active {
+    transform: translateY(-5px);
+} */
+
+.Experience {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ExpHeading {
+    width: 80%;
+    display: flex;
+}
+
+.ExperienceDivs {
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+}
+
+
+.Resume {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.CertificateStyle {
+    margin-top: 6rem;
+    width: 50%;
+    padding: 1rem;
+}
+
+.ListofExp {
+
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ContactHeading {
+    width: 100%;
+    text-align: center;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.FormParent {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form input,
+textarea {
+    color: white;
+    background-color: rgba(33, 32, 32, 0.561);
+    border-radius: 5px;
+}
+
+.SocialIcons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.Social {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.SocialGmail {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+
+}
+
+.ContactME {
+    margin-top: 7rem;
+}
+
+.IMCcertificate {
+    width: 25rem;
+    margin-top: 5rem;
+}

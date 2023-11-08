@@ -7,8 +7,9 @@
 
 # testing
 /coverage
-
+/build
 # production
+/19nzh-bltk4.json
 
 # misc
 .DS_Store
