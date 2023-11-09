@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { NavLink } from "react-router-dom";// portfolio backimage change 
+import { NavLink } from "react-router-dom"; // portfolio backimage change 
 import "./PortFolio.css"
 import "./responsive.css"
 import { GiHamburgerMenu } from "react-icons/gi"
@@ -47,7 +47,7 @@ function Navbar() {
         <NavLink to="/Contact">Contact me</NavLink>
       </div>
       <div className="Navbar1" id="navcont">   
-        <div className="Myname"  id="name"><h2 style={{ paddingLeft: "1rem" }} className="Color">AYUSH<span style={{ marginLeft: "6px ", color: 'white' }}>SHARMA</span></h2></div>
+        <div className="Myname"  id="name"><h2 style={{ paddingLeft: "1rem",textShadow:"" }} className="Color">AYUSH<span style={{ marginLeft: "6px ", color: 'white' }}>SHARMA</span></h2></div>
         <div className="Navlinks" id="navlinks">
           <NavLink to="/">Home</NavLink>
           <NavLink to="About">About me</NavLink>

@@ -45,7 +45,6 @@
     .Navbar2 {
         transition: left 0.5s;
         left: -14rem;
-        background-color: white;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -68,14 +67,8 @@
     
     .Navbar2 a {
         text-decoration: none;
-        color: black;
         transition: transform 0.2s;
         font-weight: 700;
-    }
-
-   .Navbar2 .active {
-        border: none;
-        color:rgb(255, 0, 0);
     }
 
     .Skills {
