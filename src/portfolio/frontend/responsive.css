@@ -6,26 +6,28 @@
     .Myimage {
         width: 10rem;
     }
-   
-.HomeParentDiv{
-    width:100%;
-   padding:1rem;
-}
+
+    .HomeParentDiv {
+        width: 100%;
+        padding: 1rem;
+    }
+
     .HomeLeftSection {
         margin-top: 0rem;
         color: white;
-       
+
     }
-  .burgerspan{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
+    .burgerspan {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .Navbar {
         justify-content: flex-start;
-        height:0;
+        height: 0;
     }
 
     .HamburgerMenu {
@@ -34,10 +36,12 @@
         display: block;
         padding: 1rem;
     }
-.ImCross{
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-}
+
+    .ImCross {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+
     .Myname {
         display: none;
     }
@@ -52,7 +56,7 @@
         z-index: 3;
         position: absolute;
         top: 0px;
-        height:40vh;
+        height: 40vh;
     }
 
     .Navbar2 span {
@@ -64,7 +68,7 @@
         padding-left: 1rem;
     }
 
-    
+
     .Navbar2 a {
         text-decoration: none;
         transition: transform 0.2s;
@@ -211,12 +215,14 @@
 
     .IMCcertificate {
         width: 100%;
+        height: 70%;
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
 
     .CertificateStyle {
-        width: 100%;
+        width: 20rem;
+        height: 20rem;
     }
 
     .FormParent h5 {
@@ -250,25 +256,31 @@
 }
 
 @media screen and (min-width:425px) and (max-width:768px) {
-   
-.HomeParentDiv{
-    width:100%;
-}
-.Myimage {
-    width: 10rem;
-}
+
+    .HomeParentDiv {
+        width: 100%;
+    }
+
+    .Myimage {
+        width: 10rem;
+    }
 
 
-.HomeLeftSection {
-    margin-top: 0rem;
-    color: white;
-    padding-left: 1rem;
-}
+    .HomeLeftSection {
+        margin-top: 0rem;
+        color: white;
+        padding-left: 1rem;
+    }
 
     .ExperienceDivs {
         gap: 15%;
     }
-  
+
+    .CertificateStyle {
+        width: 28rem;
+        height: 25rem;
+    }
+
 
     .SocialIcons {
         width: 100%;
@@ -386,11 +398,12 @@
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .HomeParentDiv {
-        width:90%;
+        width: 90%;
     }
+
     .Myimage {
         width: 10rem;
-        margin-right:1rem;
+        margin-right: 1rem;
     }
 
     .ExperienceDivs {
@@ -415,18 +428,25 @@
         width: 100%;
     }
 
+    .CertificateStyle {
+        width: 40rem;
+        height: 30rem;
+    }
+
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
-    .Myimage{
-        width:10rem;
+    .Myimage {
+        width: 10rem;
     }
+
     .HomeParentDiv {
-       justify-content: flex-start;
-        width:100%;
-        gap:5%;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 5%;
     }
-    .HomeRightSection{
+
+    .HomeRightSection {
         padding-left: 2rem;
     }
 
@@ -448,4 +468,8 @@
         justify-content: start;
     }
 
+    .CertificateStyle {
+        width: 45rem;
+        height: 30rem;
+    }
 }

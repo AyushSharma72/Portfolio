@@ -45,7 +45,7 @@ function Portfolio() {
                 <div className="ProjectImages" style={{ marginTop: "2rem" }}>
 
                     <div className="imagedivs">
-                        <img src={flicker} style={{ width: "100%", height: "100%" }} />
+                        <img src={flicker} />
                         <div className="layer">
                             <p className="font" style={{ fontWeight: "700", textAlign: "center" }}  >Frontend Clone of <a href="https://www.flickr.com/photos/tags/flicker/" style={{ color: "white" }}>Flicker Website</a>
                                 <br></br> Source Code Link <a href="https://github.com/AyushSharma72/flikr-landing-page"><HiExternalLink className="ExternalLink" /></a>
@@ -55,7 +55,7 @@ function Portfolio() {
                     </div>
 
                     <div className="imagedivs">
-                        <img src={fossils} style={{ width: "100%", height: "100%" }} />
+                        <img src={fossils} />
                         <div className="layer">
                             <p className="font" style={{ fontWeight: "700", textAlign: "center" }}>Frontend Clone of Fossils Website
                                 <br></br>Source Code  Link <a href="https://github.com/AyushSharma72/fossils-website-clone"><HiExternalLink className="ExternalLink" /></a>
@@ -65,7 +65,7 @@ function Portfolio() {
                     </div>
 
                     <div className="imagedivs">
-                        <img src={quiz} style={{ width: "100%", height: "100%" }} />
+                        <img src={quiz} />
                         <div className="layer">
                             <p className="font" style={{ fontWeight: "700" }}>Quiz App
                                 <br></br>Live Link <a href="https://ayushsharma72.github.io/quiz-app-using-html-css-and-javascript/"><HiExternalLink className="ExternalLink" /></a>
@@ -74,7 +74,7 @@ function Portfolio() {
                     </div>
 
                     <div className="imagedivs">
-                        <img src={netflix} style={{ width: "100%", height: "100%" }} />
+                        <img src={netflix} />
                         <div className="layer"     >
                             <p className="font" style={{ fontWeight: "700" }}>NetFlix Clone
                                 <br></br>Source Code  Link <a href="https://github.com/AyushSharma72/netflix-clone-html-css-and-js"><HiExternalLink className="ExternalLink" /></a>

@@ -4,7 +4,7 @@ import "./PortFolio.css"
 import "./responsive.css"
 function BharatCertificate(){
     return (
-        <div style={{display:"flex",justifyContent:"center"}}> 
+        <div className="IMCcertificateparent2"> 
           <img src={Bharat} className="CertificateStyle"></img>
         </div>
     )

@@ -4,7 +4,7 @@ import "./responsive.css"
 import Techno from "./assets/technohacks certificate.png"
 function TechnoCertificate(){
     return (
-        <div style={{display:"flex",justifyContent:"center"}}> 
+        <div className="IMCcertificateparent2"> 
           <img src={Techno} className="CertificateStyle"></img>
         </div>
     )

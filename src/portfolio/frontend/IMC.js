@@ -4,7 +4,7 @@ import "./PortFolio.css"
 import "./responsive.css"
 function IMCCertificate(){
     return (
-        <div style={{display:"flex",justifyContent:"center"}}> 
+        <div className="IMCcertificateparent"> 
           <img src={IMC}  className="IMCcertificate"></img>
         </div>
     )
