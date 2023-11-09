@@ -9,7 +9,7 @@
    
 .HomeParentDiv{
     width:100%;
-   
+   padding:1rem;
 }
     .HomeLeftSection {
         margin-top: 0rem;
@@ -34,7 +34,10 @@
         display: block;
         padding: 1rem;
     }
-
+.ImCross{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
     .Myname {
         display: none;
     }
@@ -50,7 +53,7 @@
         z-index: 3;
         position: absolute;
         top: 0px;
-        height: 60vh;
+        height:40vh;
     }
 
     .Navbar2 span {
@@ -59,19 +62,20 @@
     }
 
     .Navbar2 a {
-        width: 80%;
         padding-left: 1rem;
     }
 
-    .active {
-        border-bottom: none;
-    }
-
+    
     .Navbar2 a {
         text-decoration: none;
         color: black;
         transition: transform 0.2s;
         font-weight: 700;
+    }
+
+   .Navbar2 .active {
+        border: none;
+        color:rgb(255, 0, 0);
     }
 
     .Skills {
@@ -168,7 +172,7 @@
     }
 
     .Projects {
-        margin-top: 2rem;
+        margin-top: 4rem;
 
     }
 
@@ -239,7 +243,7 @@
     }
 
     .ContactME {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .Social {

@@ -2,24 +2,20 @@ import React, { useEffect, useState } from "react"
 import "./PortFolio.css"
 import "./responsive.css"
 import { BiSolidUpArrow } from "react-icons/bi"
-import { set } from "mongoose"
 function ScrollButton() {
     const [visible, setvisible] = useState(false)
 
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                setvisible(true)
-            }
-            else {
-                setvisible(false)
-            }
-        })
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            setvisible(true)
+        }
+        else {
+            setvisible(false)
+        }
     })
 
+
     function ScrollToTOP() {
-        console.log("hi")
         window.scrollTo({
             top: 0,
             behavior: "smooth",

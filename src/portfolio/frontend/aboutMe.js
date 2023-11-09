@@ -80,11 +80,7 @@ function AboutMe() {
         {`
           body {
             background-image: url(${backimage});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            height: 100%;
-            width: 100%;
+          
           }
         `}
         </style>

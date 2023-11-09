@@ -27,13 +27,13 @@ function Portfolio() {
         }
 }
 
-    function Downloaded() {
-        const message = setInterval(() => {
-            alert("Resume Downloaded Succesfully")
-            clearInterval(message);
-        }, 2000)
+    // function Downloaded() {
+    //     const message = setInterval(() => {
+    //         alert("Resume Downloaded Succesfully")
+    //         clearInterval(message);
+    //     }, 2000)
 
-    }
+    // }
     return (
 
 
@@ -142,11 +142,7 @@ function Portfolio() {
           {`
           body {
             background-image: url(${backimage});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            height:100%;
-            width: 100%;
+           
           }
         `}
         </style> 

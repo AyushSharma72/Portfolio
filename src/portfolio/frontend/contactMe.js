@@ -11,18 +11,21 @@ function Contact() {
     const [EmailError, setEmailError] = useState(true);
     const [NameError, setNameError] = useState(true);
     const [MessageError, setMessageError] = useState(true);
+    let [Send, Setsend] = useState("Send")
 
     async function HandleSubmit() {
-
-        await fetch("http://localhost:5000/SubmitForm", {
+        Setsend("Sending...")
+        let result = await fetch("https://contactapi-pa0z.onrender.com/SubmitForm", {
             method: "Post",
             body: JSON.stringify({ Name, Email, Message }),
             headers: {
                 "Content-Type": "application/json"
             }
         });
-        
-        alert("Message Sent to Ayush succesfully");
+        if (result) {
+            Setsend("Send");
+            alert("Message Sent to Ayush succesfully");
+        }
 
     }
     useEffect(() => {
@@ -38,7 +41,7 @@ function Contact() {
         if (Message.value.trim() === '') {
             setMessageError(true);
         }
-    })
+    }, [Name, Email, Message])
 
     function checkEmail() {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -55,7 +58,7 @@ function Contact() {
         const Message = document.getElementById("Message")
         if (Message.value.length >= 1) {
             setMessageError(false);
-        }else{
+        } else {
             setMessageError(true);
         }
     }
@@ -65,7 +68,7 @@ function Contact() {
         if (Name.value.length >= 1) {
             setNameError(false);
         }
-        else{
+        else {
             setNameError(true);
         }
     }
@@ -73,16 +76,16 @@ function Contact() {
 
     return (
         <div className="ContactME">
-          <h1 className="ContactHeading Color">Contact<span className="Color2">Me</span></h1>
+            <h1 className="ContactHeading Color">Contact<span className="Color2">Me</span></h1>
 
             <div className="FormParent">
                 <h5 className="font" style={{ marginBottom: "0rem" }}>Please fill out the form to contact me </h5>
-                <p className="font" style={{ marginBottom: "0rem", textAlign: "center" }}>(Note: Please wait Sometime after clicking send button)</p>
+                <p className="font" style={{ marginBottom: "0rem", textAlign: "center" }}>(Note: Please fill out all fields to enable button)</p>
                 <form className="Form">
                     <input type="text" placeholder="Your Name" id="Name" style={{ width: "100%" }} onChange={(e) => { Setname(e.target.value); checkName(); }} required></input>
                     <input type="email" placeholder="Your Email  (Please enter a valid email)" id="Email" style={{ width: "100%" }} onChange={(e) => { SetEmail(e.target.value); checkEmail(); }} required></input>
                     <textarea rows="8" cols="83" placeholder="Message" id="Message" style={{ width: "100%" }} onChange={(e) => { SetMessage(e.target.value); checkMessage(); }} required ></textarea>
-                    <button type="button" className="Button" onClick={HandleSubmit}disabled={EmailError || NameError || MessageError}>Send</button>
+                    <button type="button" className="Button" onClick={HandleSubmit} disabled={EmailError || NameError || MessageError}>{Send}</button>
                 </form>
             </div>
             <div style={{ marginTop: "1rem" }}>

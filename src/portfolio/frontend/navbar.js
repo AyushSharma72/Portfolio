@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";// portfolio backimage change
 import "./PortFolio.css"
 import "./responsive.css"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { ImCross} from "react-icons/im"
 
 function Navbar() {
   const [slide, setslide] = useState(true);
@@ -40,7 +40,7 @@ function Navbar() {
     <div className="Navbar"  >
       <div className="HamburgerMenu"><span className="burgerspan"><GiHamburgerMenu style={{ color: "white" }} onClick={ShowNavBar} /> <div ><h2 style={{ paddingLeft: "1rem" }} className="Color">AYUSH<span style={{ marginLeft: "6px ", color: 'white' }}>SHARMA</span></h2></div></span></div>
       <div className="Navbar2" id="Navbar2">
-        <span><BsFillArrowLeftCircleFill onClick={ShowNavBar} /> </span>
+        <span><ImCross onClick={ShowNavBar} className="ImCross"/> </span>
         <NavLink to="/">Home</NavLink>
         <NavLink to="About">About me</NavLink>
         <NavLink to="/Portfolio">Portfolio</NavLink>
