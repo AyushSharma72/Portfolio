@@ -36,7 +36,6 @@ function Navbar() {
   }
 
   return (
-
     <div className="Navbar"  >
       <div className="HamburgerMenu"><span className="burgerspan"><GiHamburgerMenu style={{ color: "white" }} onClick={ShowNavBar} /> <div ><h2 style={{ paddingLeft: "1rem" }} className="Color">AYUSH<span style={{ marginLeft: "6px ", color: 'white' }}>SHARMA</span></h2></div></span></div>
       <div className="Navbar2" id="Navbar2">

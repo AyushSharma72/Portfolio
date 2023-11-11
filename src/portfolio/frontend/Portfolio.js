@@ -1,31 +1,11 @@
 import React from "react"
 import "./PortFolio.css"
 import "./responsive.css"
-import flicker from "./assets/flicker.png"
-import Instagram from "./assets/intagram.png"
-import fossils from "./assets/fossils.png"
 import backimage from "./assets/smooth-gray-background.jpg"
-import netflix from "./assets/netflix.png"
-import calc from "./assets/Calculator.jpg"
-import quiz from "./assets/quiz.png"
-import Resume from "./assets/ayush.png"
 import { Link } from "react-router-dom"
-import { HiExternalLink } from "react-icons/hi"
-
+import Crousal from "./crousal"
 function Portfolio() {
 
-    function ShowProjects() {
-        const id = document.getElementById("MoreProjects");
-        const button = document.getElementById("Seemore")
-        id.classList.toggle("show")
-
-        if (button.innerText === "See More") {
-            button.innerText = "See Less"
-        }
-        else {
-            button.innerText = "See More"
-        }
-}
 
     // function Downloaded() {
     //     const message = setInterval(() => {
@@ -40,77 +20,10 @@ function Portfolio() {
         <div>
             <div className="Projects">
                 <div style={{ textAlign: "center", marginTop: "1rem" }}>
-                    <h1 className="Color" style={{fontWeight:"700"}}>Projects</h1>
+                    <h1 className="Color" style={{ fontWeight: "700" }}>Projects</h1>
                 </div>
-                <div className="ProjectImages" style={{ marginTop: "2rem" }}>
-
-                    <div className="imagedivs">
-                        <img src={flicker} />
-                        <div className="layer">
-                            <p className="font" style={{ fontWeight: "700", textAlign: "center" }}  >Frontend Clone of <a href="https://www.flickr.com/photos/tags/flicker/" style={{ color: "white" }}>Flicker Website</a>
-                                <br></br> Source Code Link <a href="https://github.com/AyushSharma72/flikr-landing-page"><HiExternalLink className="ExternalLink" /></a>
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div className="imagedivs">
-                        <img src={fossils} />
-                        <div className="layer">
-                            <p className="font" style={{ fontWeight: "700", textAlign: "center" }}>Frontend Clone of Fossils Website
-                                <br></br>Source Code  Link <a href="https://github.com/AyushSharma72/fossils-website-clone"><HiExternalLink className="ExternalLink" /></a>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div className="imagedivs">
-                        <img src={quiz} />
-                        <div className="layer">
-                            <p className="font" style={{ fontWeight: "700" }}>Quiz App
-                                <br></br>Live Link <a href="https://ayushsharma72.github.io/quiz-app-using-html-css-and-javascript/"><HiExternalLink className="ExternalLink" /></a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="imagedivs">
-                        <img src={netflix} />
-                        <div className="layer"     >
-                            <p className="font" style={{ fontWeight: "700" }}>NetFlix Clone
-                                <br></br>Source Code  Link <a href="https://github.com/AyushSharma72/netflix-clone-html-css-and-js"><HiExternalLink className="ExternalLink" /></a>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div className="ProjectImages2" id="MoreProjects">
-
-                        <div className="imagedivs2">
-                            <img src={Instagram} style={{ width: "100%", height: "100%" }} />
-                            <div className="layer">
-                                <p className="font" style={{ fontWeight: "700" }}>Instagram Login Page
-                                    <br></br>Live Link <a href="https://ayushsharma72.github.io/instagram-login-page/"><HiExternalLink className="ExternalLink" /></a>
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="imagedivs2">
-                            <img src={calc} style={{ width: "100%" }} />
-                            <div className="layer">
-                                <p className="font" style={{ fontWeight: "700" }}> Calculator
-                                    <br></br>Live Link <a href="https://ayushsharma72.github.io/calculator-using-html-css-and-js/"><HiExternalLink className="ExternalLink" /></a>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div ></div> {/*placeholder div */}
-
-                <div style={{ padding: "1rem 0rem" }}> <button className="Button" onClick={ShowProjects} id="Seemore">See More</button></div>
-
-
+                <Crousal/>
+              
             </div>
 
             <div className="Experience">
@@ -139,13 +52,13 @@ function Portfolio() {
 
             </div>
             <style>
-          {`
+                {`
           body {
             background-image: url(${backimage});
            
           }
         `}
-        </style> 
+            </style>
         </div>
 
     )

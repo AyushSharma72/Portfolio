@@ -1,9 +1,9 @@
-body {
+body{
     background-image: url("assets/backimage.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
-    height: 100%;
+    height:100%;
     width: 100%;
 }
 
@@ -254,79 +254,73 @@ a.active {
 }
 
 .Projects {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
-.ProjectImages {
-    width: 80%;
-    padding-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-evenly;
-    /* background-color: rgba(235, 229, 229, 0.128); */
-
-    background: transparent;
+.carousel-container {
+    margin-top: 2rem;
+    width: 50%;
+}
+.Images {
+    width: 100%;
+    margin: 0 auto;
 }
 
+.Images2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    /* Change to your desired color */
+}
+
+
+.slick-prev {
+  
+    left: -4rem !important;
+}
+
+.slick-next {
+    right: -4rem !important;
+}
+
+.slick-prev::before {
+    font-size: 2rem !important;
+}
+
+.slick-next::before {
+    font-size: 2rem !important;
+}
+
+.ImageParent {
+    position: relative;
+}
 .layer {
-    position:relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), black);
+    z-index: 3;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(52, 44, 44, 0.5), rgb(9, 9, 9));
     height: 0%;
-    left: 0;
-    top: -100%;
-    overflow: hidden;
+    top: 0%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: height 0.5s;
 }
 
-.imagedivs {
-    width: 40%;
+.layer p {
+   opacity:0;
+   transition:opacity 0.5s;
 }
 
-.imagedivs img {
-    width: 100%;
+.ImageParent:hover .layer {
     height: 100%;
 }
 
-.imagedivs:hover .layer {
-    height:100%;
-}
-
-.imagedivs2 {
-    width: 40%;
-    height: 77%;
-}
-
-.imagedivs2:hover .layer {
-
-    height: 100%;
-}
-
-.ProjectImages2 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease;
-}
-
-.show {
-    max-height: 70rem;
-
-}
-
-.ExternalLink {
-    background-color: aliceblue;
-
+.ImageParent:hover .layer p{
+    opacity: 1;
 }
 
 .Button {
@@ -420,6 +414,7 @@ textarea {
 
 .SocialIcons {
     width: 80%;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,7 +440,7 @@ textarea {
 }
 
 .ContactME {
-    height: 100vh;
+    height: 100%;
     margin-top: 7rem;
 }
 
@@ -453,16 +448,17 @@ textarea {
     margin-top: 7rem;
 }
 
-.IMCcertificateparent{
-    width:100%;
-    padding:1rem;
-    height:100vh;
-    display:flex;
+.IMCcertificateparent {
+    width: 100%;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
     justify-content: center;
 }
-.IMCcertificateparent2{
-    width:100%;
-    height:100vh;
-    display:flex;
+
+.IMCcertificateparent2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: center;
 }

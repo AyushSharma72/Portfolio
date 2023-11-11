@@ -12,9 +12,12 @@ function Contact() {
     const [NameError, setNameError] = useState(true);
     const [MessageError, setMessageError] = useState(true);
     let [Send, Setsend] = useState("Send")
+    const [SendingMEssage,setSendingMEssage] = useState(false);
 
     async function HandleSubmit() {
+
         Setsend("Sending...")
+        setSendingMEssage(true)
         let result = await fetch("https://contactapi-pa0z.onrender.com/SubmitForm", {
             method: "Post",
             body: JSON.stringify({ Name, Email, Message }),
@@ -25,6 +28,7 @@ function Contact() {
         if (result) {
             Setsend("Send");
             alert("Message Sent to Ayush succesfully");
+            setSendingMEssage(false)
         }
 
     }
@@ -85,10 +89,11 @@ function Contact() {
                     <input type="text" placeholder="Your Name" id="Name" style={{ width: "100%" }} onChange={(e) => { Setname(e.target.value); checkName(); }} required></input>
                     <input type="email" placeholder="Your Email  (Please enter a valid email)" id="Email" style={{ width: "100%" }} onChange={(e) => { SetEmail(e.target.value); checkEmail(); }} required></input>
                     <textarea rows="8" cols="83" placeholder="Message" id="Message" style={{ width: "100%" }} onChange={(e) => { SetMessage(e.target.value); checkMessage(); }} required ></textarea>
-                    <button type="button" className="Button" onClick={HandleSubmit} disabled={EmailError || NameError || MessageError}>{Send}</button>
+                    <button type="button" className="Button" onClick={HandleSubmit} disabled={EmailError || NameError || MessageError||SendingMEssage}>{Send}</button>
+                  {SendingMEssage?<p className="font" style={{color:"cyan"}}>Please wait it may take a while</p>:null}
                 </form>
             </div>
-            <div style={{ marginTop: "1rem" }}>
+            <div >
                 <div className="SocialIcons">
                     <h5 className="Color2">Connect with me on <span className="Color"> social media</span> </h5>
                     <div className="Social"><a href="https://www.linkedin.com/in/ayush-sharma-a155a8267/"><FaLinkedin style={{ color: "white", height: "2rem", width: "2rem" }} /></a><h5 className="font">Ayush Sharma</h5></div>
