@@ -56,7 +56,7 @@
         z-index: 3;
         position: absolute;
         top: 0px;
-        height: 50vh;
+        height: 100vh;
     }
 
     .Navbar2 span {
@@ -169,33 +169,31 @@
     }
 
     .Projects {
-        margin-top: 4rem;
+        margin-top: 5rem;
 
     }
 
-    .ProjectImages {
-        width: 100%;
-        padding-top: 2rem;
-        display: flex;
-        gap: 2rem;
-        background-color: rgba(235, 229, 229, 0.128);
 
+    .AboutMeParent {
+        height: 95vh;
     }
+
     .carousel-container {
         width: 80%;
     }
+
     .slick-prev {
         left: -24px !important;
     }
-    
+
     .slick-next {
         right: -24px !important;
     }
-    
+
     .slick-prev::before {
         font-size: 1rem !important;
     }
-    
+
     .slick-next::before {
         font-size: 1rem !important;
     }
@@ -398,22 +396,24 @@
     form {
         padding: 0rem 1rem;
     }
+
     .carousel-container {
         margin-top: 3rem;
         width: 80%;
     }
+
     .slick-prev {
         left: -2rem !important;
     }
-    
+
     .slick-next {
         right: -2rem !important;
     }
-    
+
     .slick-prev::before {
         font-size: 1.5rem !important;
     }
-    
+
     .slick-next::before {
         font-size: 1.5rem !important;
     }

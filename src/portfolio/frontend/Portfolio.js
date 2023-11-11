@@ -17,7 +17,7 @@ function Portfolio() {
     return (
 
 
-        <div>
+        <div className="AboutMeParent">
             <div className="Projects">
                 <div style={{ textAlign: "center", marginTop: "1rem" }}>
                     <h1 className="Color" style={{ fontWeight: "700" }}>Projects</h1>
@@ -45,9 +45,9 @@ function Portfolio() {
             <div className="Resume">
                 <div style={{ width: "80%", display: "flex" }}> <h1 className="Color">Download Resume</h1>
                 </div>
-                <div style={{ color: "white", width: "80%", display: "flex", gap: "1rem", marginTop: "1rem" }} >
+                <div style={{ color: "white", width: "80%", display: "flex", gap: "1rem", marginTop: "1rem",alignItems:"start",flexDirection:"column",justifyContent:"start" }} >
                     {/* <button className="Button" onClick={Downloaded} ><a href="/Unavailable" download="Resume" style={{ color: "black", textDecoration: "none" }} >Download</a></button> */}
-                    <button className="Button" ><a href="/Unavailable" style={{ color: "black", textDecoration: "none" }} >Download</a></button>
+                    <button className="Button"  disabled ><a href="/Unavailable" style={{ color: "black", textDecoration: "none" }}>Download</a></button><p style={{color:"red"}}>Resume Currently Unavailable</p>
                 </div>
 
             </div>
