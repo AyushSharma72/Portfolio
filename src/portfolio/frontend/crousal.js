@@ -19,6 +19,8 @@ const SimpleCarousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,  // Enable autoplay
+        autoplaySpeed: 3000,
     };
 
     return (
