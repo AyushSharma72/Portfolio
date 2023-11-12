@@ -21,11 +21,7 @@ const SimpleCarousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-<<<<<<< HEAD
-        autoplay: true,
-=======
         autoplay: true,  
->>>>>>> fff3ad9c79a5b2148e218cf93cddd648447cd762
         autoplaySpeed: 3000,
     };
 
