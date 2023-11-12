@@ -1,4 +1,5 @@
 import Slider from "react-slick"
+import { useState } from "react"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React from "react";
@@ -9,6 +10,7 @@ import Resume from "./assets/ayush.png"
 import flicker from "./assets/flicker.png"
 import Instagram from "./assets/intagram.png"
 import fossils from "./assets/fossils.png"
+import Lucky from "./assets/luckydraw.png"
 import { HiExternalLink } from "react-icons/hi"
 import "./PortFolio.css"
 
@@ -19,12 +21,22 @@ const SimpleCarousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
     };
 
     return (
         <div style={{ display: "flex", justifyContent: "center" }}>
             <div className="carousel-container">
                 <Slider {...settings}>
+                    <div className="ImageParent">
+                        <img src={Lucky} className="Images" alt="Flicker"></img>
+                        <div className="layer">
+                            <p className="font" style={{ fontWeight: "700", textAlign: "center" }}>Lucky Draw Website using MERN  <br></br>developed for IMC indore <br></br>LinkedIn post link
+                                <a href="https://www.linkedin.com/posts/ayush-sharma-a155a8267_intership-imc-activity-7124027220016193536-o7Mo?utm_source=share&utm_medium=member_desktop"><HiExternalLink /></a></p>
+
+                        </div>
+                    </div>
                     <div className="ImageParent">
                         <img src={flicker} className="Images" alt="Flicker"></img>
                         <div className="layer">

@@ -1,9 +1,9 @@
-body{
+body {
     background-image: url("assets/backimage.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
-    height:100%;
+    height: 100%;
     width: 100%;
 }
 
@@ -261,6 +261,7 @@ a.active {
     margin-top: 2rem;
     width: 50%;
 }
+
 .Images {
     width: 100%;
     margin: 0 auto;
@@ -278,7 +279,7 @@ a.active {
 
 
 .slick-prev {
-  
+
     left: -4rem !important;
 }
 
@@ -297,6 +298,7 @@ a.active {
 .ImageParent {
     position: relative;
 }
+
 .layer {
     z-index: 3;
     position: absolute;
@@ -311,15 +313,15 @@ a.active {
 }
 
 .layer p {
-   opacity:0;
-   transition:opacity 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .ImageParent:hover .layer {
     height: 100%;
 }
 
-.ImageParent:hover .layer p{
+.ImageParent:hover .layer p {
     opacity: 1;
 }
 
@@ -444,16 +446,24 @@ textarea {
     margin-top: 7rem;
 }
 
-.IMCcertificate {
-    margin-top: 7rem;
+.CERTIFICATE {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
 }
 
 .IMCcertificateparent {
-    width: 100%;
-    padding: 1rem;
-    height: 100vh;
+    margin-top: 6rem;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap:1rem;
+}
+
+.IMCcertificate {
+    width: 40%;
 }
 
 .IMCcertificateparent2 {

@@ -47,7 +47,7 @@ function Portfolio() {
                 </div>
                 <div style={{ color: "white", width: "80%", display: "flex", gap: "1rem", marginTop: "1rem",alignItems:"start",flexDirection:"column",justifyContent:"start" }} >
                     {/* <button className="Button" onClick={Downloaded} ><a href="/Unavailable" download="Resume" style={{ color: "black", textDecoration: "none" }} >Download</a></button> */}
-                    <button className="Button"  disabled ><a href="/Unavailable" style={{ color: "black", textDecoration: "none" }}>Download</a></button><p style={{color:"red"}}>Resume Currently Unavailable</p>
+                    <button className="Button"  disabled >Download</button><p style={{color:"red"}}>Resume Currently Unavailable</p>  {/*<a href="/Unavailable" style={{ color: "black", textDecoration: "none" }}></a> */}
                 </div>
 
             </div>

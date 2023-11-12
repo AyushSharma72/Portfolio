@@ -256,6 +256,16 @@
         width: 100%;
         justify-content: start;
     }
+
+    .IMCcertificateparent {
+        width: 100%;
+        padding: 0 0.5rem;
+        flex-direction: column;
+    }
+
+    .CERTIFICATE {
+        height: 100%;
+    }
 }
 
 @media screen and (min-width:425px) and (max-width:768px) {
@@ -418,6 +428,16 @@
         font-size: 1.5rem !important;
     }
 
+    .IMCcertificateparent {
+        width: 100%;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .IMCcertificate {
+        width: 60%;
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -457,12 +477,18 @@
         height: 30rem;
     }
 
+    .IMCcertificateparent {
+        width: 100%;
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
     .Myimage {
         width: 10rem;
     }
+   
 
     .HomeParentDiv {
         justify-content: flex-start;
