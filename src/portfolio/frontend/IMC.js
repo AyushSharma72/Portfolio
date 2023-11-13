@@ -8,7 +8,7 @@ function IMCCertificate() {
     <div className="CERTIFICATE">
       <div className="IMCcertificateparent">
         <img src={IMC} className="IMCcertificate"></img>
-        <div className="font"><h4 >In the course of this internship</h4>
+        <div className="font" ><h4 >In the course of this internship</h4>
           <h4>I with my team developed a  <span className="Color">lucky draw system</span></h4>
           <h4>which generated random winners name from </h4>
           <h4>the database of <span className="Color">INDORE MUNCIPLE COOPORATION</span></h4>

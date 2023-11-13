@@ -95,7 +95,7 @@ function Contact() {
             </div>
             <div >
                 <div className="SocialIcons">
-                    <h5 className="Color2">Connect with me on <span className="Color"> social media</span> </h5>
+                    <h5 className="Color2">Connect with me on <span className="Color"> Social Media</span> </h5>
                     <div className="Social"><a href="https://www.linkedin.com/in/ayush-sharma-a155a8267/"><FaLinkedin style={{ color: "white", height: "2rem", width: "2rem" }} /></a><h5 className="font">Ayush Sharma</h5></div>
                     <div className="Social"><a href="https://instagram.com/ayush_s_72?igshid=OGQ5ZDc2ODk2ZA=="><FaInstagramSquare style={{ color: "white", height: "2rem", width: "2rem" }} /></a><h5 className="font">ayush_s_72</h5></div>
                     <div className="SocialGmail" ><BiLogoGmail style={{ color: "white", height: "2rem", width: "2rem" }} /><h5 className="font">asharma7588@gmail.com</h5></div>

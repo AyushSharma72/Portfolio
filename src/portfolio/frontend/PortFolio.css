@@ -326,19 +326,16 @@ a.active {
 }
 
 .Button {
-    border-radius: 10%;
+    border-radius:5px;
     font-weight: 700;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
+    
 }
 
 .Button:hover {
     border: 2px solid black;
     transform: scale(0.95);
 }
-
-/* .Button:active {
-    transform: translateY(-5px);
-} */
 
 .Experience {
     width: 100%;
@@ -356,8 +353,13 @@ a.active {
 
 .ExperienceDivs {
     display: flex;
+    justify-content:space-between;
+    width:50%;
+}
+.ExperienceDivs1{
+    display: flex;
     justify-content: start;
-    gap: 10%;
+     
 }
 
 
@@ -468,7 +470,9 @@ textarea {
 
 .IMCcertificateparent2 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

@@ -30,13 +30,13 @@ function Portfolio() {
                 <div className="ExpHeading"><h1 className="Color">Experience</h1></div>
 
                 <ul className="ListofExp">
-                    <div className="ExperienceDivs"><li>Intern at Indore Muncipal Corporation's IT Department </li>
+                    <div className="ExperienceDivs"><li>Intern at <b>Indore Muncipal Corporation's IT Department</b> </li>
                         <Link to="/MuncipleCertificate"><button className="Button">View Certificate</button></Link>
                     </div>
-                    <div className="ExperienceDivs" style={{ gap: "7%" }}><li>Completed Web Development Internship from Technohacks</li>
+                    <div className="ExperienceDivs" style={{ gap: "7%" }}><li>Completed Web Development Internship from <b>Technohacks</b> </li>
                         <Link to="/TechnoCertificate"><button className="Button">View Certificate</button></Link>
                     </div>
-                    <div className="ExperienceDivs" style={{ gap: "6.8%" }}><li>Completed Web Development Internship from Bharat Intern</li>
+                    <div className="ExperienceDivs" style={{ gap: "6.8%" }}><li>Completed Web Development Internship from <b>Bharat Intern</b></li>
                         <Link to="/BharatCertificate" ><button className="Button">View Certificate</button></Link>
                     </div>
                 </ul>
