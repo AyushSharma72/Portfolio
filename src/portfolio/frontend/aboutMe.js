@@ -25,7 +25,7 @@ function AboutMe() {
                 <div className="Skills">
                     <div className="MERN">
 
-                        <img src={Mern} style={{ width: "5rem" }}></img>
+                        <img src={Mern} style={{ width: "5rem" }} alt="Mern"  loading="lazy"></img>
 
                         <div className="AboutusContent">
 
@@ -37,7 +37,7 @@ function AboutMe() {
                     </div>
 
                     <div className="WebDesign">
-                        <img src={Design} style={{ width: "5rem" }}></img>
+                        <img src={Design} style={{ width: "5rem" }} alt ="Design"  loading="lazy"></img>
 
                         <div className="AboutusContent">
 
@@ -48,7 +48,7 @@ function AboutMe() {
                     </div>
 
                     <div className="LanguagesKnown">
-                        <img src={Languages} style={{ width: "5rem", height: "4rem" }}></img>
+                        <img src={Languages} style={{ width: "5rem", height: "4rem" }} alt ="Languages Image"  loading="lazy"></img>
                         <div className="AboutusContent">
 
                             <h2>LANGUAGES AND DATABASE KNOWLEDGE</h2>
@@ -79,6 +79,7 @@ function AboutMe() {
             <style>
         {`
           body {
+           
             background-image: url(${backimage});
           
           }

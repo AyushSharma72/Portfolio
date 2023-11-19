@@ -1,6 +1,5 @@
 import React from "react"
 import Ayush from "./assets/ayushsharma.jpg"
-import backimage from "./assets/backimage.jpg"
 import { Link } from "react-router-dom"
 import "./PortFolio.css"
 import "./responsive.css"
@@ -9,7 +8,7 @@ function Home() {
 
     <div className="HomeParentDiv">
       <div className="HomeRightSection">
-        <img src={Ayush} className="Myimage" ></img>
+        <img src={Ayush} className="Myimage"  alt="Ayush"  loading="lazy"></img>
       </div>
       <div className="HomeLeftSection">
         <h4 >Hello,</h4>
@@ -18,18 +17,6 @@ function Home() {
         <p>Integrated from DAVV University, Indore</p>
         <Link to="/About"><button className="Button" style={{ backgroundColor: "cyan" }}>About Me</button></Link>
       </div>
-      {/* <style>
-          {`
-          body {
-            background-image: url(${backimage});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            height:100%;
-            width: 100%;
-          }
-        `}
-        </style> */}
     </div>
 
 
