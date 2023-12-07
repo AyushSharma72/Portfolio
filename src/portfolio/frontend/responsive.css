@@ -198,11 +198,13 @@
         display: flex;
         justify-content: center;
     }
+
     .ExperienceDivs {
-        width:100%;
+        width: 100%;
     }
+
     .Experience {
-        margin-top:3rem;
+        margin-top: 3rem;
     }
 
     .ListofExp {
@@ -218,7 +220,7 @@
         height: 70%;
         margin-top: 4rem;
         margin-bottom: 2rem;
-       
+
     }
 
     .CertificateStyle {
@@ -264,13 +266,19 @@
     .CERTIFICATE {
         height: 100%;
     }
-    .Internals{
-        width:100%;
-       padding:0 1rem;
+
+    .Internals {
+        width: 100%;
+        padding: 0 1rem;
     }
+
     .Assignment {
         height: 110vh;
-}
+    }
+
+    .AssigmentContent {
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (min-width:425px) and (max-width:768px) {
@@ -293,14 +301,16 @@
     .ExperienceDivs {
         gap: 15%;
     }
-    
+
     .ListofExp {
         width: 100%;
-      
+
     }
+
     .ExperienceDivs {
-        width:100%;
+        width: 100%;
     }
+
     .CertificateStyle {
         width: 28rem;
         height: 25rem;
@@ -449,15 +459,20 @@
     .IMCcertificate {
         width: 60%;
     }
-   
-    .Internals{
-        width:100%;
-        padding:0 1rem;
-     
+
+    .Internals {
+        width: 100%;
+        padding: 0 1rem;
+
     }
+
     .Assignment {
-        height: 100vh;  
-}
+        height: 100vh;
+    }
+
+    .AssigmentContent {
+        margin-top: 3rem;
+    }
 
 }
 
@@ -474,8 +489,9 @@
     .ExperienceDivs {
         gap: 11.5%;
     }
+
     .ExperienceDivs {
-        width:100%;
+        width: 100%;
     }
 
     .SocialIcons {
@@ -505,12 +521,14 @@
         width: 100%;
         gap: 1rem;
     }
-    .Internals{
-        width:100%;
+
+    .Internals {
+        width: 100%;
     }
+
     .Assignment {
         height: 100vh;
-}
+    }
 
 }
 
@@ -518,7 +536,7 @@
     .Myimage {
         width: 10rem;
     }
-   
+
     .HomeParentDiv {
         justify-content: flex-start;
         width: 100%;
@@ -532,8 +550,9 @@
     .ExperienceDivs {
         gap: 11.5%;
     }
+
     .ExperienceDivs {
-        width:100%;
+        width: 100%;
     }
 
     .SocialIcons {
@@ -554,10 +573,12 @@
         width: 45rem;
         height: 30rem;
     }
-    .Internals{
-        width:100%;
+
+    .Internals {
+        width: 100%;
     }
+
     .Assignment {
         height: 100vh;
-}
+    }
 }
