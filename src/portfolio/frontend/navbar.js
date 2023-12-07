@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { NavLink } from "react-router-dom"; // portfolio backimage change 
+import { NavLink } from "react-router-dom"; 
 import "./PortFolio.css"
 import "./responsive.css"
 import { GiHamburgerMenu } from "react-icons/gi"
@@ -14,7 +14,7 @@ function Navbar() {
     }
     else {
       setslide(true);
-      document.getElementById("Navbar2").style.left = "-14rem";
+      document.getElementById("Navbar2").style.left = "-15rem";
     }
   }
 
@@ -44,6 +44,7 @@ function Navbar() {
         <NavLink to="About">About me</NavLink>
         <NavLink to="/Portfolio">Portfolio</NavLink>
         <NavLink to="/Contact">Contact me</NavLink>
+        <NavLink to="/Assignment">Assignments</NavLink>
       </div>
       <div className="Navbar1" id="navcont">   
         <div className="Myname"  id="name"><h2 style={{ paddingLeft: "1rem",textShadow:"" }} className="Color">AYUSH<span style={{ marginLeft: "6px ", color: 'white' }}>SHARMA</span></h2></div>
@@ -52,6 +53,7 @@ function Navbar() {
           <NavLink to="About">About me</NavLink>
           <NavLink to="/Portfolio">Portfolio</NavLink>
           <NavLink to="/Contact">Contact me</NavLink>
+          <NavLink to="/Assignment">Assignments</NavLink>
 
         </div>
       </div>

@@ -1,4 +1,4 @@
-@media screen and (min-width:0px) and (max-width:426px) {
+@media screen and (min-width:0px) and (max-width:480px) {
     .Navlinks {
         display: none;
     }
@@ -48,7 +48,7 @@
 
     .Navbar2 {
         transition: left 0.5s;
-        left: -14rem;
+        left: -15rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -264,6 +264,13 @@
     .CERTIFICATE {
         height: 100%;
     }
+    .Internals{
+        width:100%;
+       padding:0 1rem;
+    }
+    .Assignment {
+        height: 110vh;
+}
 }
 
 @media screen and (min-width:425px) and (max-width:768px) {
@@ -442,6 +449,15 @@
     .IMCcertificate {
         width: 60%;
     }
+   
+    .Internals{
+        width:100%;
+        padding:0 1rem;
+     
+    }
+    .Assignment {
+        height: 100vh;  
+}
 
 }
 
@@ -489,6 +505,12 @@
         width: 100%;
         gap: 1rem;
     }
+    .Internals{
+        width:100%;
+    }
+    .Assignment {
+        height: 100vh;
+}
 
 }
 
@@ -497,7 +519,6 @@
         width: 10rem;
     }
    
-
     .HomeParentDiv {
         justify-content: flex-start;
         width: 100%;
@@ -533,4 +554,10 @@
         width: 45rem;
         height: 30rem;
     }
+    .Internals{
+        width:100%;
+    }
+    .Assignment {
+        height: 100vh;
+}
 }

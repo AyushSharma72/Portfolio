@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, {useState } from "react"
 import "./PortFolio.css"
 import "./responsive.css"
 import { BiSolidUpArrow } from "react-icons/bi"
