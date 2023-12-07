@@ -275,7 +275,9 @@
     .Assignment {
         height: 119vh;
     }
-
+    .AssigmentContent {
+        margin-top: 4rem;
+    }
 
 }
 
