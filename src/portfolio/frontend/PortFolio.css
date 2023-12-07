@@ -500,7 +500,7 @@ textarea {
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    gap:4rem;
+    gap:3rem;
 }
 
 .Internals a {
