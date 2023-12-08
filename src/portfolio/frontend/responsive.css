@@ -271,14 +271,10 @@
         width: 100%;
         padding: 0 1rem;
     }
-
-    .Assignment {
-        height: 119vh;
+    .AssigmentContent{
+        margin-top:25%;
     }
-    .AssigmentContent {
-        margin-top: 4rem;
-    }
-
+   
 }
 
 @media screen and (min-width:425px) and (max-width:768px) {
@@ -463,15 +459,12 @@
     .Internals {
         width: 100%;
         padding: 0 1rem;
-
-    }
-
+    }  
     .Assignment {
         height: 100vh;
     }
-
-    .AssigmentContent {
-        margin-top: 5rem;
+    .AssigmentContent{
+        margin-top:17%;
     }
 
 }
@@ -527,9 +520,9 @@
     }
 
     .Assignment {
-        height: 115vh;
+        height: 100vh;
     }
-
+ 
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
@@ -578,8 +571,10 @@
         width: 100%;
     }
 
-    .Assignment {
-        height: 115vh;
+    .AssigmentContent {
+        margin-top:8%;
     }
-
+    .Assignment{
+        height: 100vh;
+    }
 }
