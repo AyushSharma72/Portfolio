@@ -3,10 +3,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React from "react";
 import netflix from "./assets/netflix.png"
-import calc from "./assets/Calculator.jpg"
+import Weather from "./assets/weather.png"
 import quiz from "./assets/quiz.png"
 import flicker from "./assets/flicker.png"
-import Instagram from "./assets/intagram.png"
+import code from "./assets/code.png"
 import fossils from "./assets/fossils.png"
 import Lucky from "./assets/luckydraw.png"
 import { HiExternalLink } from "react-icons/hi"
@@ -71,18 +71,18 @@ const SimpleCarousel = () => {
                     </div>
 
                     <div className="ImageParent">
-                        <img src={Instagram} className="Images2" alt="Instagram"  loading="lazy"></img>
+                        <img src={code} className="Images" alt="Editor"  loading="lazy"></img>
                         <div className="layer">
-                            <p className="font" style={{ fontWeight: "700" }}>Instagram Login Page
-                                <br></br>Live Link <a href="https://ayushsharma72.github.io/instagram-login-page/"><HiExternalLink className="ExternalLink" /></a>
+                            <p className="font" style={{ fontWeight: "700",textAlign:"center" }}>Code Editor supports <br></br> python,C++ and java
+                                <br></br>Live Link <a href="https://reactcodecompiler.onrender.com"><HiExternalLink className="ExternalLink" /></a>
                             </p>
                         </div>
                     </div>
                     <div className="ImageParent">
-                        <img src={calc} className="Images2" alt="Calculator"  loading="lazy"></img>
+                        <img src={Weather} className="Images" alt="Weather App"  loading="lazy"></img>
                         <div className="layer">
-                            <p className="font" style={{ fontWeight: "700" }}> Calculator
-                                <br></br>Live Link <a href="https://ayushsharma72.github.io/calculator-using-html-css-and-js/"><HiExternalLink className="ExternalLink" /></a>
+                            <p className="font" style={{ fontWeight: "700",textAlign:"center" }}>Weather showing app
+                                <br></br>Live Link <a href="https://weatherapp-573r.onrender.com"><HiExternalLink className="ExternalLink" /></a>
                             </p>
                         </div>
                     </div>
