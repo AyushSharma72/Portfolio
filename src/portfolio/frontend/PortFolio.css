@@ -473,43 +473,48 @@ textarea {
 }
 
 .Assignment {
+    margin-top: 7rem;
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.AssigmentContent {
-    margin-top:8%;
-    width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.Internals {
-    margin-top: 2rem;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
+
+.custom-table1 th,
+.custom-table1 td {
+    border: 2px solid black;
+    height: 4rem;
+    text-align: center;
 }
 
-.Internals a {
+.custom-table1 th{
+font-size: larger;
+
+}
+.custom-table1 {
+    font-weight: 600;
+}
+.custom-table1 a {
     text-decoration: none;
-    color: white;
-    font-weight: 700;
-    background-color: rgba(98, 93, 93, 0.626);
-    padding: 0.5rem;
+    color: black;
 
 }
 
-.Subinternals {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: space-around;
+.custom-table2 th,
+.custom-table2 td {
+    border: 2px solid black;
+    text-align: center;
+}
+.custom-table2 {
+    font-weight: 600;
+    display: none;
+}
+.custom-table2 a {
+    text-decoration: none;
+    color: black;
+
 }

@@ -267,17 +267,30 @@
         height: 100%;
     }
 
-    .Internals {
-        width: 100%;
-        padding: 0 1rem;
+    .custom-table1 {
+        display: none;
     }
-    .AssigmentContent{
-        margin-top:25%;
+
+    .custom-table2 {
+        display: block;
     }
-   
+
+    .Assignment {
+        padding: 0 0;
+    }
 }
 
-@media screen and (min-width:425px) and (max-width:768px) {
+@media screen and (min-width:400px) and (max-width:480px) {
+    .custom-table1 {
+        display: block;
+    }
+
+    .custom-table2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
 
     .HomeParentDiv {
         width: 100%;
@@ -456,16 +469,14 @@
         width: 60%;
     }
 
-    .Internals {
-        width: 100%;
-        padding: 0 1rem;
-    }  
+    .custom-table2 {
+        display: none;
+    }
+
     .Assignment {
-        height: 100vh;
+        height: 85vh;
     }
-    .AssigmentContent{
-        margin-top:17%;
-    }
+
 
 }
 
@@ -515,17 +526,21 @@
         gap: 1rem;
     }
 
-    .Internals {
-        width: 100%;
+    .custom-table2 {
+        display: none;
     }
 
     .Assignment {
-        height: 100vh;
+        height: 85vh;
     }
- 
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
+
+    .Assignment {
+        height: 85vh;
+    }
+
     .Myimage {
         width: 10rem;
     }
@@ -567,14 +582,7 @@
         height: 30rem;
     }
 
-    .Internals {
-        width: 100%;
-    }
-
-    .AssigmentContent {
-        margin-top:8%;
-    }
-    .Assignment{
-        height: 100vh;
+    .custom-table2 {
+        display: none;
     }
 }
